@@ -1,87 +1,24 @@
-FFmpeg 64-bit static Windows build from www.gyan.dev
+We compare H264, H265, and VP9 objectively by quality metrics like
+(PSNR, SSIM, etc.) and encoding time. To encode the videos we use FFmpeg. 
 
-Version: 2021-09-20-git-59719a905c-full_build-www.gyan.dev
+FFmpeg is the most used multimedia framework, capable of
+decoding, encoding, transcoding, muxing, demuxing, streaming,
+ltering, and playing almost everything that humans and machines
+have developed. It's portable: FFmpeg compiles, runs, and passes our
+FATE testing infrastructure on Linux, Mac OS X, Windows, BSDs, Solaris,
+and other platforms. 
 
-License: GPL v3
+We use libx264 of FFmpeg library for x264, H.264/MPEG-4 AVC, libx265 for x265 H.265/HEVC, and libvpx-vp9 for VP9.
 
-Source Code: https://github.com/FFmpeg/FFmpeg/commit/59719a905c
+#Try Yourself
 
-git-full build configuration: 
 
-    --enable-gpl
-    --enable-version3
-    --enable-static
-    --disable-w32threads
-    --disable-autodetect
-    --enable-fontconfig
-    --enable-iconv
-    --enable-gnutls
-    --enable-libxml2
-    --enable-gmp
-    --enable-lzma
-    --enable-libsnappy
-    --enable-zlib
-    --enable-librist
-    --enable-libsrt
-    --enable-libssh
-    --enable-libzmq
-    --enable-avisynth
-    --enable-libbluray
-    --enable-libcaca
-    --enable-sdl2
-    --enable-libdav1d
-    --enable-libzvbi
-    --enable-librav1e
-    --enable-libsvtav1
-    --enable-libwebp
-    --enable-libx264
-    --enable-libx265
-    --enable-libxvid
-    --enable-libaom
-    --enable-libopenjpeg
-    --enable-libvpx
-    --enable-libass
-    --enable-frei0r
-    --enable-libfreetype
-    --enable-libfribidi
-    --enable-libvidstab
-    --enable-libvmaf
-    --enable-libzimg
-    --enable-amf
-    --enable-cuda-llvm
-    --enable-cuvid
-    --enable-ffnvcodec
-    --enable-nvdec
-    --enable-nvenc
-    --enable-d3d11va
-    --enable-dxva2
-    --enable-libmfx
-    --enable-libglslang
-    --enable-vulkan
-    --enable-opencl
-    --enable-libcdio
-    --enable-libgme
-    --enable-libmodplug
-    --enable-libopenmpt
-    --enable-libopencore-amrwb
-    --enable-libmp3lame
-    --enable-libshine
-    --enable-libtheora
-    --enable-libtwolame
-    --enable-libvo-amrwbenc
-    --enable-libilbc
-    --enable-libgsm
-    --enable-libopencore-amrnb
-    --enable-libopus
-    --enable-libspeex
-    --enable-libvorbis
-    --enable-ladspa
-    --enable-libbs2b
-    --enable-libflite
-    --enable-libmysofa
-    --enable-librubberband
-    --enable-libsoxr
-    --enable-chromaprint
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nazrulhuda/video-codec-for-live-streaming.git
+git push -u origin main
 
 
 MP4 TO  H264
