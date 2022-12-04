@@ -1,4 +1,4 @@
-# Project Name: H.264/MPEG-AVC, H.265/MPEG-HEVC and VP9 Codec Comparison for real time applications
+Project Name: H.264/MPEG-AVC, H.265/MPEG-HEVC and VP9 Codec Comparison for real time applications
 
 
 
@@ -14,8 +14,9 @@ and other platforms.
 
 We use libx264 of FFmpeg library for x264, H.264/MPEG-4 AVC, libx265 for x265 H.265/HEVC, and libvpx-vp9 for VP9.
 
-#Try Yourself
 
+
+#Try Yourself
 
 git init
 git add README.md
