@@ -1,4 +1,4 @@
-Project Name: H.264/MPEG-AVC, H.265/MPEG-HEVC and VP9 Codec Comparison for real time applications
+Project Name: Devising Faster Video Streaming Architecture with Low Bandwidth Video Compression Techniques
 
 
 
