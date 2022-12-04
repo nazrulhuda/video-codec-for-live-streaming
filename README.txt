@@ -83,3 +83,18 @@ git-full build configuration:
     --enable-libsoxr
     --enable-chromaprint
 
+
+MP4 TO  H264
+ffmpeg -i original.mp4 -an -vcodec libx264 -crf 23  result264.h264
+
+MP4 TO H265
+ffmpeg -i original.mp4 -an -vcodec libx265 -crf 23  result265.h265
+
+
+MP4 TO VP9
+ffmpeg  -i original.mp4 -c:v libvpx-vp9 -c:a libopus resultvp9.webm
+
+TO ADD SSIM PSNR AND VMAF 
+ffmpeg -i compressed.mp4 -i original.mp4 -lavfi libvmaf="model_path='C\:\\PATH_programs\\vmaf_v0.6.1.json':psnr=1:ssim=1:log_fmt=csv:log_path=VMAF.csv" -f null -
+
+
