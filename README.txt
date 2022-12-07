@@ -16,7 +16,7 @@ We use libx264 of FFmpeg library for x264, H.264/MPEG-4 AVC, libx265 for x265 H.
 
 
 
-!#Try Yourself
+!Try Yourself
 
 git init
 git add README.md
