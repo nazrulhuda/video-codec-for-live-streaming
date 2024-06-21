@@ -16,7 +16,7 @@ We use libx264 of FFmpeg library for x264, H.264/MPEG-4 AVC, libx265 for x265 H.
 
 To run this project locally, follow these steps:
 
-  ```bash
+
   git init
   git add README.md
   git commit -m "first commit"
@@ -26,20 +26,20 @@ To run this project locally, follow these steps:
 
 
 FROM MP4 TO  H264
-  ```bash
+
   ffmpeg -i original.mp4 -an -vcodec libx264 -crf 23  result264.h264
 
 FROM MP4 TO H265
-  ```bash
+ 
   ffmpeg -i original.mp4 -an -vcodec libx265 -crf 23  result265.h265
 
 
 FROM MP4 TO VP9
-  ```bash
+
   ffmpeg  -i original.mp4 -c:v libvpx-vp9 -c:a libopus resultvp9.webm
 
 FROM TO ADD SSIM PSNR AND VMAF 
-  ```bash
+
   ffmpeg -i compressed.mp4 -i original.mp4 -lavfi libvmaf="model_path='C\:\\PATH_programs\\vmaf_v0.6.1.json':psnr=1:ssim=1:log_fmt=csv:log_path=VMAF.csv" -f null -
 
 
